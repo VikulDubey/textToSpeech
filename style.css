@@ -62,7 +62,7 @@
   background-size: calc(1rem);
   background-position: 97% 58%;
   cursor: pointer;
-  padding-right: 2rem;
+  padding: 0.2rem 2rem 0.2rem 0.5rem;
 }
 #btn {
   width: 20%;
