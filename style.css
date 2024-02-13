@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #21d4fd;
+  background-image: linear-gradient(45deg, #010758, #490d61);
+}
+.speechConverter {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.speechConverter h1 {
+  color: #fff;
+}
+.speechConverter h1 span {
+  color: #ff2963;
+  text-decoration: underline;
+  font-size: 2.6rem;
+}
+#userText {
+  height: 10rem;
+  width: 100%;
+  outline: 0;
+  background: #403d84;
+  padding: 0.8rem;
+  color: #ffffff;
+  resize: none;
+  border-radius: 0.2rem;
+  font-size: 1.2rem;
+  caret-color: #fff;
+}
+#userText::placeholder {
+  color: #ddd;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.5rem;
+}
+#langNames {
+  width: 80%;
+  border-radius: 0.2rem;
+  outline: 0;
+  border: 1px solid #e8e6e689;
+  appearance: none;
+  background-image: url(./angle-down-solid.svg);
+  background-repeat: no-repeat;
+  background-size: calc(1rem);
+  background-position: 97% 58%;
+  cursor: pointer;
+  padding-right: 2rem;
+}
+#btn {
+  width: 20%;
+  outline: 0;
+  padding: 0.2rem 3rem;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.2rem;
+  background: #ff2963;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 780px) {
+  #btn {
+    font-size: 0.7rem;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 400px) {
+  #btn {
+    font-size: 0.7rem;
+    width: 40%;
+  }
+}
